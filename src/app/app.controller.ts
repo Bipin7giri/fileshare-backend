@@ -10,7 +10,8 @@ export class AppController {
   async uploadFile(req: Request, res: Response) {
     console.log(req.file);
     res.json({
-      filePath: "http://localhost:8000/" + req?.file?.path,
+      filePath:
+        "https://fileshare-backend-bezv.onrender.com/" + req?.file?.path,
       fileName: req.file?.originalname,
     });
   }
